@@ -42,17 +42,11 @@ function ToHigh() {
     }
 }
 
-//
-
-
-
-
-
-
-//function ToHigh() {
-//    var tal1 = document.getElementById('nummer1').value;
-//    var tal2 = document.getElementById('nummer2').value;
-//    if (tal1*2 < ) {
-        
-//    }
-//}
+//Uppgift 5
+function Submit() {
+    var first = document.getElementById('number1').value;
+    var second = document.getElementById('number2').value;
+    var three = document.getElementById('number3').value;
+    var calc = first + second + three;
+    document.getElementById('sum').innerHTML = calc;
+}
