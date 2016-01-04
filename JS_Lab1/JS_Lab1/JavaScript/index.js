@@ -16,13 +16,21 @@ function MoneyPund(sekKronor) {
 
 //Uppgift 2
 
-function numbers() {
+function Numbers() {
     var text = '';
-    var i;
-    for (i = 100; i > 0; i--) {
-        text += i + '<br>';
+    for (var i = 100; i > 0; i--) {
+        text += i + ', ';
     }
     document.getElementById('result').innerHTML = text;
+}
+
+//Uppgift 3 
+function IfHigh() {
+    var first = document.getElementById('nr1').value;
+    var second = document.getElementById('nr2').value;
+    if (first > second) {
+        document.getElementById('summa').innerHTML = first;
+    }
 }
 
 
