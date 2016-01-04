@@ -3,13 +3,13 @@ var kronorIDollar = MoneyDollar(sekKronor);
 var kronorIPund = MoneyPund(sekKronor);
 
 function MoneyDollar(sekKronor) {
-    var kronor = document.getElementById('pickANumber').value;
+    var kronor = document.getElementById('pickANumberForDollar').value;
     var result = kronor / 6 + ' dollar';
     document.getElementById("resultDollar").innerHTML = result;
 }
 
 function MoneyPund(sekKronor) {
-    var kronor = document.getElementById('pickANumber').value;
+    var kronor = document.getElementById('pickANumberForPund').value;
     var result = kronor / 12 + ' pund';
     document.getElementById("resultPund").innerHTML = result;
 }
@@ -29,7 +29,7 @@ function IfHigh() {
     var first = document.getElementById('nr1').value;
     var second = document.getElementById('nr2').value;
     if (first > second) {
-        document.getElementById('summa').innerHTML = first;
+        document.getElementById('summa').innerHTML = 'Första talet var störst: ' + +first;
     }
 }
 
@@ -47,6 +47,10 @@ function Submit() {
     var first = document.getElementById('number1').value;
     var second = document.getElementById('number2').value;
     var three = document.getElementById('number3').value;
-    var calc = first + second + three;
+
+    var calc = 'Summa: ' + (+first + +second + +three);
     document.getElementById('sum').innerHTML = calc;
+
+    var average = 'Medelvärde: ' + (+first + +second + +three) / 3;
+    document.getElementById('average').innerHTML = average;
 }
