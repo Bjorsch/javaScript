@@ -33,7 +33,16 @@ function IfHigh() {
     }
 }
 
+//Uppgift 4
+function ToHigh() {
+    var first = document.getElementById('nummer1').value;
+    var second = document.getElementById('nummer2').value;
+    if (first / 2 > second) {
+        document.getElementById('numberToHigh').innerHTML = 'För stort tal';
+    }
+}
 
+//
 
 
 
